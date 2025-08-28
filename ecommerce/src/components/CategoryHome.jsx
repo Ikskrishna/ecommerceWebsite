@@ -1,5 +1,8 @@
 import {Link} from "react-router-dom"
 import { motion } from "framer-motion";
+import cospic from './src/assets/Category/cospic.jpg'
+import furniture from './src/assets/Category/furniture.png'
+import foods from './src/assets/Category/foods.jpg'
 
 const CategoryHome = () => {
 
@@ -15,13 +18,13 @@ const CategoryHome = () => {
       <div className=' gap-14 grid grid-cols-1  mx-auto sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3' >
 
         <Link to={`/category/beauty`}>
-        <motion.div whileHover={{scale:1.05}}><img  loading="lazy" src='./src/assets/Category/cospic.jpg' className=' shadow-xl rounded-md  w-80 h-64'/></motion.div></Link>
+        <motion.div whileHover={{scale:1.05}}><img  loading="lazy" src={cospic} className=' shadow-xl rounded-md  w-80 h-64'/></motion.div></Link>
 
         <Link to={`/category/furniture`}>
-        <motion.div whileHover={{scale:1.05}}><img  loading="lazy" src='./src/assets/Category/furniture.png' className=' shadow-xl rounded-md w-80 h-64'/></motion.div></Link>
+        <motion.div whileHover={{scale:1.05}}><img  loading="lazy" src={furniture} className=' shadow-xl rounded-md w-80 h-64'/></motion.div></Link>
 
         <Link to={`/category/groceries`}>
-        <motion.div whileHover={{scale:1.05}}><img  loading="lazy" src='./src/assets/Category/foods.jpg' className=' shadow-xl rounded-md w-80 h-64'/></motion.div></Link>
+        <motion.div whileHover={{scale:1.05}}><img  loading="lazy" src={foods} className=' shadow-xl rounded-md w-80 h-64'/></motion.div></Link>
 
       </div>
     </div>
