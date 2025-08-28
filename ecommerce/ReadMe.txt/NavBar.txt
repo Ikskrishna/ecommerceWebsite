@@ -1,0 +1,26 @@
+1. Home Page 
+    a. NavBar - {
+        * Link Tag React Router DOM.
+        * UseCart From CartContext - "const {cart}=useCart()". // For Cart Products list in NavBar.
+        * This is for DropDown Menu- 
+                "const [isOpen, setIsOpen] = useState(false);" /
+
+                " const options = [
+                  { name: "Home", path: "/" },
+                  { name: "Category", path: "/category" },
+                  { name: "About", path: "/about" },
+                  { name: "Contact", path: "/contact" },
+                ];"
+
+                "{isOpen && (
+                    options.map((option,index)=>(
+
+                         ))
+                    )}
+                 }"
+
+                "{cart.length > 0 && (
+                     <span className=''>{cart.length}</span>
+                    )}"
+        
+    
