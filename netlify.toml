@@ -1,5 +1,5 @@
 [build.environment]
-  NODE_VERSION = "18.16.0"
+  NODE_VERSION = "20.5.1"
 
 [build]
   command = "cd ecommerce && npm install && npm run build"
