@@ -7,9 +7,9 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 const ImageSwiper = () => {
   const images = [
-    "./src/assets/swap1.jpg",
-    "./src/assets/swap2.jpg",
-    "./src/assets/swap3.jpg",
+    "./swiper/swap1.jpg",
+    "./swiper/swap2.jpg",
+    "./swiper/swap3.jpg",
   ];
 
   return (

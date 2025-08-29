@@ -14,8 +14,6 @@ import CheckOut from './Pages/CheckOut'
 import '@fontsource/inter'; // default 400
 import '@fontsource/inter/600.css'; // optional additional weights
 import PrivacyPolicy from './Pages/PrivacyPolicy'
-
-
   
 function App() {
  
@@ -23,6 +21,8 @@ function App() {
 
   return (
     <>
+    <div className='w-full max-w-[1440px] mx-auto overflow-x-hidden'>
+
     <CartProvider>
     <Navbar />
           <Routes>
@@ -39,6 +39,7 @@ function App() {
           </Routes>
     <Footer />
     </CartProvider>
+    </div>
     </>
   )
 }

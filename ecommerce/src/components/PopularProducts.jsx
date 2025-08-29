@@ -23,39 +23,42 @@ const PopularProducts = () => {
 </h2>
 
 
- <div className='w-full flex py-10'>
+ <div className=' flex justify-center'>
 
-          <div className='grid grid-cols-2 gap-8 mx-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3'>
+          <div className='grid gap-5 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 '>
+  {products.map((product) => (
+    <Link key={product.id} to={`/product/${product.id}`}>
+      <motion.div 
+        whileHover={{ scale: 1.05 }}
+        className='w-[20vh] sm:w-[20vh] md:w-[35vh]  flex flex-col bg-white shadow-xl rounded-md overflow-hidden transition-all duration-300'
+      >
+        {/* Image */}
+        <div className='aspect-[4/3] bg-green-200'>
+          <img
+            className="object-cover w-full h-full"
+            src={product.thumbnail}
+            alt={product.title}
+            loading="lazy"
+          />
+        </div>
 
-            {/* Product Card  */}
-            {products.map((product)=>(
-              <Link key={product.id} to={`/product/${product.id}`}>
-              <motion.div 
-              whileHover={{scale:1.05}}
-              className=' w-[30vh] flex flex-col gap-2 h-[55vh] sm:h-[55vh] sm:w-[30vh] md:h-[60vh] md:w-[40vh] rounded-md bg-white shadow-xl'>
-              {/* Image */}
-                <div className='w-full h-[35vh] rounded-md bg-green-200 '>
-                 
-                  <img
-                  className="object-contain h-full w-full "
-                  src={product.thumbnail}
-                  alt={product.title}
-                   loading="lazy"
-                />
-                </div>
-              {/* Text */}
-              {/* <div className='px-3 h-[4vh] '><h1 className='text-xl text-gray-600'>Rs. {product.price}</h1></div> */}
-              <div className='px-3 h-[11vh]   overflow-hidden break-words '>
-                <h1 className=''>{product.title}<br/>⭐{product.rating} </h1>
-                
-                </div>
-              <div className='px-3 py-1 h-[7vh] flex justify-center'>
-                <button className=' w-full rounded-sm text-white bg-black text-md hover:scale-105 transition'>ViewDetails</button>
-              </div>
-          </motion.div></Link>
-            ))}
-            
-          </div>
+        {/* Title & Rating */}
+        <div className='p-3 flex-grow'>
+          <h1 className='text-base font-semibold truncate text-gray-800'>{product.title}</h1>
+          <p className='text-sm text-gray-500'>⭐ {product.rating}</p>
+        </div>
+
+        {/* Button */}
+        <div className='px-3 pb-3'>
+          <button className='w-full bg-black text-white py-2 rounded hover:scale-105 transition'>
+            View Details
+          </button>
+        </div>
+      </motion.div>
+    </Link>
+  ))}
+</div>
+
       </div>
   </>
   );

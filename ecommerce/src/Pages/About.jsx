@@ -22,7 +22,7 @@ const About = () => {
 
       {/* Our Story */}
       <section className="py-16 px-6 md:px-20">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-5xl overflow-hidden mx-auto grid md:grid-cols-2 gap-12 items-center">
           {/* <img 
             src="https://source.unsplash.com/600x400/?shopping,ecommerce"
             alt="Our Story"

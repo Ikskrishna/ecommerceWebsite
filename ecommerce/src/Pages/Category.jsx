@@ -70,8 +70,10 @@ const Category = () => {
   if (loading) return <div className='text-center py-20'>Loading...</div>;
 
   // 📦 Final JSX UI return
+
+
   return (
-    <div className={`w-full ${bgColor} flex flex-col p-5 px-4 md:px-10 lg:px-20`}>
+    <div className={`w-full ${bgColor} flex flex-col  px-4 md:px-40 lg:px-40 `}>
       {/* 🔎 Search + ⏬ Category Dropdown */}
       <BackButton  />
       <div className="p-3 flex flex-col md:flex-row gap-4 justify-between items-center">
@@ -110,7 +112,7 @@ const Category = () => {
       </div>
 
       {/* 🖼 Product Grid Section */}
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-auto max-w-screen-xl mt-6">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-auto  max-w-screen-xl mt-6">
 
         {/* 📄 If filtered products exist, map and display them */}
         {filteredProducts.length > 0 ? (
@@ -119,7 +121,7 @@ const Category = () => {
               <div className="flex flex-col bg-white rounded-lg shadow-lg overflow-hidden h-full">
                 
                 {/* 🖼 Image */}
-                <div className="h-48 md:h-56 w-full bg-white flex items-center justify-center overflow-hidden">
+                <div className="h-42 md:h-56 w-full bg-white flex items-center justify-center overflow-hidden">
                   <img
                   
                     src={product.thumbnail}

@@ -15,7 +15,7 @@ const Badges = () => {
       className="w-[30vw]  h-[40vw] md:w-[25vh] md:h-[30vh] flex justify-center items-center mx-auto"
     >
       <img
-        src={`./src/assets/badges/b${num}.png`}
+        src={`./badges/b${num}.png`}
         alt={`Badge ${num}`}
         className="max-w-full max-h-full object-contain"
       />

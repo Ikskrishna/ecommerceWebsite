@@ -31,7 +31,7 @@ const ProductPage = () => {
 
   return (
     <>
-       <div className="max-w-6xl mx-auto px-4 py-12">
+       <div className="max-w-6xl px-2 mx-auto py-10">
         <BackButton />
 
       <div className="grid md:grid-cols-2 gap-10 p-20">
@@ -39,7 +39,7 @@ const ProductPage = () => {
           <img
             src={product.thumbnail}
             alt={product.title}
-            className="w-full bg-orange-200 rounded-lg shadow-md object-contain h-96 hover:scale-105 transition"
+            className="w-full bg-orange-200 rounded-lg shadow-md object-contain h-60 hover:scale-105 transition"
           />
         </div>
         <div className="flex flex-col gap-5 justify-between">

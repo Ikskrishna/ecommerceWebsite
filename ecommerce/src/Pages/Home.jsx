@@ -11,10 +11,11 @@ const Badges = React.lazy(() => import('../components/Badges'));
 
 const Home = () => {
   const scrollRef = useRef(null)
+  
 
   return (
     <>
-    <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
+    <Suspense fallback={<div className="text-center">Loading...</div>}>
       <div>
         <ImageSwiper />
         <CategoryHome />
