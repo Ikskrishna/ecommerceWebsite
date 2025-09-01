@@ -18,10 +18,10 @@ const CategoryHome = () => {
         <Link to={`/category/beauty`}>
         <motion.div whileHover={{scale:1.05}}><img src="./Category/cospic.jpg" loading="lazy"  className=' shadow-xl rounded-md  w-80 h-64'/></motion.div></Link>
 
-        <Link to={`/category/furniture`}>
+        <Link to={`/category/groceries`}>
         <motion.div whileHover={{scale:1.05}}><img src="./Category/foods.jpg" loading="lazy"  className=' shadow-xl rounded-md w-80 h-64'/></motion.div></Link>
 
-        <Link to={`/category/groceries`}>
+        <Link to={`/category/furniture`}>
         <motion.div whileHover={{scale:1.05}}><img src="./Category/furniture.png" loading="lazy"  className=' shadow-xl rounded-md w-80 h-64'/></motion.div></Link>
 
       </div>
